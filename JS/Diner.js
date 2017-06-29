@@ -1,0 +1,3 @@
+// Variables:
+
+$content = $('#content');

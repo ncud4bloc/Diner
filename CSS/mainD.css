@@ -1,0 +1,159 @@
+body {
+    height: 900px;
+    background-color: #fcfafa;
+    font-family: 'Fruktur', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Yellowtail', cursive;
+    font-family: 'Poiret One', cursive;
+}
+
+#content {
+    width: 100%;
+    height: 900px;
+    background-image: url(../IMAGES/diner23.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 3px solid #f00;
+}
+
+#imagelogo {
+    width: 250px;
+    height: 182px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+#tabs {
+    position: relative;
+    /*background-color: #fff;*/
+    width: 100%;
+    height: 50px;
+    top: 225px;
+}
+
+ul {
+    width: 100%;
+}
+
+[id*="tab-"] {
+    display: inline-block;
+    position: relative;
+    left: -180px;
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: -1%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 15px;
+}
+
+#tab-1 {
+    background-color: #f00;
+    border: 2px solid #f00;
+}
+
+#tab-2 {
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+#tab-3 {
+    background-color: #00f;
+    border: 2px solid #00f;
+}
+
+#articles {
+    position: relative;
+    /*background-color: #d3cbcb;*/
+    width: 100%;
+    height: 250px;
+    top: 225px;
+}
+
+#diner-info {
+    width: 80%;
+    height: 570px;
+}
+
+[id*="info-"] {
+    display: inline-block;
+    position: relative;
+    top: -142px;
+    left: 80px;
+    width: 100%;
+    height: 246px;
+    /*height: auto;*/
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #d3cbcb;
+    opacity: .7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #000;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+
+#info-p1 {
+    visibility: hidden;
+    border: 2px solid #f00;
+}
+
+#info-p2 {
+   /* visibility: hidden;*/
+    opacity: 1.0;
+    height: 350px;
+    margin-top: -250px;
+    border: 2px solid #fff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#info-p3 {
+    visibility: hidden;
+    border: 2px solid #00f;
+}
+
+#welcome {
+    margin-top: 25px;
+    padding-left: 25px;
+    font-family: 'Dancing Script', cursive;
+    color: #f00;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.images {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    width: 280px;
+    width: 33.33%;
+    height: 175px;
+    height: auto;
+    height: 50%;
+}
+
+[id*="img-"] {
+    border: 2px solid #fff;
+    float: left;
+}
+
+#img-4 {
+    clear: left;
+}
+
+#cinfo {
+    visibility: hidden;
+    border: 2px solid #00f;
+}
