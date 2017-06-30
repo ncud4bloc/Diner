@@ -184,16 +184,16 @@ var page3 = function(){
     var $dinfo = $('<div id="dinfo"></div>');
     var $infoall = $('<div id="infoall"></div>');
     var $img1 = $('<img class="images" id="img1" src="../IMAGES/dorks.jpg" />');
-    var $message = $('<div id="message"></div>');                                   //WIP
-    var $form = $('<form id="form"></form>')                                        //WIP
-    var $note = $('<p class="note">Talk to the professionals!!</p><p class="note"><textarea id="comments" cols="45" rows="4">Let us know what you think....</textarea></p><p class="note"><input id="send" type="submit"value="click to send" /></p>');                       //WIP
+    var $message = $('<div id="message"></div>');                                   
+    var $form = $('<form id="form"></form>')                                        
+    var $note = $('<p class="note">Talk to the professionals!!</p><p class="note"><textarea id="comments" cols="45" rows="4">Let us know what you think....</textarea></p><p class="note"><input id="send" type="submit"value="click to send" /></p>');                       
     
     $articles.append($dinfo);
     $dinfo.append($infoall);
     $infoall.append($img1);
-    $infoall.append($message); //WIP
-    $message.append($form);    //WIP
-    $form.append($note);       //WIP
+    $infoall.append($message); 
+    $message.append($form);    
+    $form.append($note);       
     
     $dinfo.css({
         'width': '80%',
