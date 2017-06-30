@@ -1,5 +1,3 @@
-// Variables:
-
 var $content = $('#content');
 var $logo = $('<div id="logo"></div>');
 var $imagelogo = $('<img id="imagelogo" src="../IMAGES/Red-Diner-Logo-1.jpg" />');
@@ -9,12 +7,6 @@ var $tab1 = $('<li id="tab1">Home</li>');
 var $tab2 = $('<li id="tab2">Menu</li>');
 var $tab3 = $('<li id="tab3">Contact</li>');
 var $articles = $('<div id="articles"></div>');
-var $dinfo = $('<div id="dinfo"></div>');
-var $infoall = $('<div id="infoall"></div>');
-var $welcome = $('<p id="welcome">Welcome to the Red Diner, Mesa Arizona\'s premier 1950\'s era eatery! Take a booth and relax with the famiy enjoying our fabulous burgers & ribs, or saunter up to the counter with your sweetie and share a malt & cheese fries.</p><p id="welcome">Click on the tabs above to see our wonderful food selections or to contact us for more information.</p>');
-
-
-// Add HTML content:
 
 $content.append($logo);
 $logo.append($imagelogo);
@@ -29,12 +21,6 @@ $ul.append($tab3);
     $tab3.addClass('tabclass');
 
 $content.append($articles);
-$articles.append($dinfo);
-$dinfo.append($infoall);
-$infoall.append($welcome);
-
-
-// Add CSS styles:
 
 $content.css({
     'width': '100%',
@@ -93,8 +79,8 @@ $tab2.css({
 });
 
 $tab3.css({
-    'background-color': '#00f',
-    'border': '2px solid #00f'
+    'background-color': '#0f0f93',
+    'border': '2px solid #0f0f93'
 });
 
 $articles.css({
@@ -105,36 +91,186 @@ $articles.css({
     'left': '80px'
 })
 
-$dinfo.css({
-    'width': '80%',
-    'height': '570px'
+var page1 = function(){
+    var $dinfo = $('<div id="dinfo"></div>');
+    var $infoall = $('<div id="infoall"></div>');
+    var $welcome = $('<p class="welcome">Welcome to the Red Diner, Mesa Arizona\'s premier 1950\'s era eatery! Take a booth and relax with the famiy enjoying our fabulous burgers & ribs, or saunter up to the counter with your sweetie and share a malt & cheese fries.</p><p class="welcome">Click on the tabs above to see our wonderful food selections or to contact us for more information.</p>');
+
+    $articles.append($dinfo);
+    $dinfo.append($infoall);
+    $infoall.append($welcome);
+
+    $dinfo.css({
+        'width': '80%',
+        'height': '570px'
+    });
+
+    $infoall.css({
+        'display': 'inline-block',
+        'position': 'relative',
+        'width': '100%',
+        'height': '246px',
+        'font-size': '18px',
+        'font-weight': '600',
+        'background-color': '#d3cbcb',
+        'opacity': '.7',
+        'background-repeat': 'no-repeat',
+        'background-position': 'center',
+        'background-size': 'cover',
+        'border': '2px solid #f00',
+        'border-top-right-radius': '35px',
+        'border-bottom-right-radius': '35px',
+        'border-bottom-left-radius': '35px'
+    });
+
+    $welcome.css({
+        'margin-top': '25px',
+        'padding-left': '25px',
+        'font-family': '"Dancing Script", cursive',
+        'color': '#f00',
+        'font-size': '28px',
+        'font-weight': '900'
+    });  
+}
+
+
+var page2 = function(){ 
+    var $dinfo = $('<div id="dinfo"></div>');
+    var $infoall = $('<div id="infoall"></div>');
+    var $img1 = $('<img class="images" id="img1" src="../IMAGES/menu.jpg" />');
+    
+    $articles.append($dinfo);
+    $dinfo.append($infoall);
+    $infoall.append($img1);
+    
+    $dinfo.css({
+        'width': '80%',
+        'height': '570px'
+    });
+
+    $infoall.css({
+        'display': 'inline-block',
+        'position': 'relative',
+        'width': '80%',
+        'height': '246px',
+        'font-size': '18px',
+        'font-weight': '600',
+        'background-color': '#d3cbcb',
+        'opacity': '1.0',
+        'background-repeat': 'no-repeat',
+        'background-position': 'center',
+        'background-size': 'cover',
+        'border': '2px solid #fff'
+    });
+    
+    $img1.css({
+        'display': 'inline-block',
+        'box-sizing': 'border-box',
+        'float': 'left',
+        'width': '280px',
+        'width': '100%',
+        'height': '100%',
+        'border': '2px solid #fff',
+        'float': 'left'
+    });
+}
+
+var page3 = function(){ 
+    var $dinfo = $('<div id="dinfo"></div>');
+    var $infoall = $('<div id="infoall"></div>');
+    var $img1 = $('<img class="images" id="img1" src="../IMAGES/dorks.jpg" />');
+    var $message = $('<div id="message"></div>');                                   //WIP
+    var $form = $('<form id="form"></form>')                                        //WIP
+    var $note = $('<p class="note">Talk to the professionals!!</p><p class="note"><textarea id="comments" cols="45" rows="4">Let us know what you think....</textarea></p><p class="note"><input id="send" type="submit"value="click to send" /></p>');                       //WIP
+    
+    $articles.append($dinfo);
+    $dinfo.append($infoall);
+    $infoall.append($img1);
+    $infoall.append($message); //WIP
+    $message.append($form);    //WIP
+    $form.append($note);       //WIP
+    
+    $dinfo.css({
+        'width': '80%',
+        'height': '570px'
+    });
+
+    $infoall.css({
+        'display': 'inline-block',
+        'position': 'relative',
+        'width': '80%',
+        'height': '246px',
+        'font-size': '18px',
+        'font-weight': '600',
+        'background-color': '#d3cbcb',
+        'opacity': '1.0',
+        'background-repeat': 'no-repeat',
+        'background-position': 'center',
+        'background-size': 'cover',
+        'border-top-right-radius': '35px',
+        'border-bottom-right-radius': '35px',
+        'border-bottom-left-radius': '35px',
+        'border': '2px solid #0f0f93'
+    });
+    
+    $img1.css({
+        'display': 'inline-block',
+        'box-sizing': 'border-box',
+        'width': '30%',
+        'height': '100%',
+        'border-right': '2px solid #0f0f93',
+        'border-bottom-left-radius': '35px',
+        'float': 'left'
+    });
+    
+    $message.css({
+        'display': 'inline-block',
+        'box-sizing': 'border-box',
+        'float': 'left',
+        'width': '60%',
+        'height': '100%'
+    });
+    
+    $note.css({
+        'font-family': 'Pacifico',
+        //'border': '1px solid #0f0f93',
+        'font-size': '20px',
+        'margin-left': '20px'
+    });
+    
+    $('#comments').css({
+        'font-family': 'cursive',
+        'font-size': '16px',
+        'font-weight': '200'
+    });
+    
+    $('#send').css({
+        'margin-left': '34%',
+        'font-family': 'cursive',
+        'font-size': '16px',
+        'font-weight': '200'
+    });
+}
+
+var reset = function(){
+    $('div#dinfo').remove();
+}
+
+//********** Function Calls ***************
+
+page1();
+
+$('#tab1').on('click',function(){
+    reset();
+    page1();
 });
 
-$infoall.css({
-    'display': 'inline-block',
-    'position': 'relative',
-    /*'top': '-142px',
-    'left': '80px',*/
-    'width': '100%',
-    'height': '246px',
-    'font-size': '18px',
-    'font-weight': '600',
-    'background-color': '#d3cbcb',
-    'opacity': '.7',
-    'background-repeat': 'no-repeat',
-    'background-position': 'center',
-    'background-size': 'cover',
-    'border': '2px solid #f00',
-    'border-top-right-radius': '35px',
-    'border-bottom-right-radius': '35px',
-    'border-bottom-left-radius': '35px'
+$('#tab2').on('click',function(){
+    reset();
+    page2();
 });
 
-$welcome.css({
-    'margin-top': '25px',
-    'padding-left': '25px',
-    'font-family': '"Dancing Script", cursive',
-    'color': '#f00',
-    'font-size': '28px',
-    'font-weight': '900'
+$('#tab3').on('click',function(){
+    reset();
+    page3();
 });
