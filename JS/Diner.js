@@ -94,7 +94,7 @@ $articles.css({
 var page1 = function(){
     var $dinfo = $('<div id="dinfo"></div>');
     var $infoall = $('<div id="infoall"></div>');
-    var $welcome = $('<p class="welcome">Welcome to the Red Diner, Mesa Arizona\'s premier 1950\'s era eatery! Take a booth and relax with the famiy enjoying our fabulous burgers & ribs, or saunter up to the counter with your sweetie and share a malt & cheese fries.</p><p class="welcome">Click on the tabs above to see our wonderful food selections or to contact us for more information.</p>');
+    var $welcome = $('<p class="welcome">Welcome to the Red Diner, Mesa Arizona\'s premier 1950\'s era eatery! Take a booth and relax with the famiy enjoying our fabulous burgers & ribs, or saunter up to the counter with your sweetie and share a malt & chili-cheese fries.</p><p class="welcome">Click on the tabs above to see our wonderful food selections or to contact us for more information.</p>');
 
     $articles.append($dinfo);
     $dinfo.append($infoall);
@@ -131,6 +131,8 @@ var page1 = function(){
         'font-size': '28px',
         'font-weight': '900'
     });  
+
+    plot();
 }
 
 
@@ -173,6 +175,9 @@ var page2 = function(){
         'border': '2px solid #fff',
         'float': 'left'
     });
+    
+    plot();
+
 }
 
 var page3 = function(){ 
@@ -250,10 +255,18 @@ var page3 = function(){
         'font-size': '16px',
         'font-weight': '200'
     });
+    
+    plot();
+
 }
 
 var reset = function(){
+    $articles.slideUp();
     $('div#dinfo').remove();
+}
+
+var plot = function(){
+    $articles.delay(200).slideDown();
 }
 
 //********** Function Calls ***************
@@ -261,16 +274,19 @@ var reset = function(){
 page1();
 
 $('#tab1').on('click',function(){
+    $articles.hide();
     reset();
     page1();
 });
 
 $('#tab2').on('click',function(){
+    $articles.hide();
     reset();
     page2();
 });
 
 $('#tab3').on('click',function(){
+    $articles.hide();
     reset();
     page3();
 });
