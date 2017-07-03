@@ -94,7 +94,7 @@ $articles.css({
 var page1 = function(){
     var $dinfo = $('<div id="dinfo"></div>');
     var $infoall = $('<div id="infoall"></div>');
-    var $welcome = $('<p class="welcome">Welcome to the Red Diner, Mesa Arizona\'s premier 1950\'s era eatery! Take a booth and relax with the famiy enjoying our fabulous burgers & ribs, or saunter up to the counter with your sweetie and share a malt & chili-cheese fries.</p><p class="welcome">Click on the tabs above to see our wonderful food selections or to contact us for more information.</p>');
+    var $welcome = $('<p class="welcome">Welcome to the Red Diner, Mesa Arizona\'s premier 1950\'s era eatery! Take a booth and relax with the family enjoying our fabulous burgers & ribs, or saunter up to the counter with your sweetie and share a malt & chili-cheese fries.</p><p class="welcome">Click on the tabs above to see our wonderful food selections or to contact us for more information.</p>');
 
     $articles.append($dinfo);
     $dinfo.append($infoall);
