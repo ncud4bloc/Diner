@@ -22,8 +22,10 @@ $ul.append($tab3);
 
 $content.append($articles);
 
+
 $content.css({
     'width': '100%',
+    'min-width': '672px',
     'height': '900px',
     'background-image': 'url(../IMAGES/diner23.jpg)',
     'background-repeat': 'no-repeat',
@@ -102,6 +104,7 @@ var page1 = function(){
 
     $dinfo.css({
         'width': '80%',
+        'min-width': '600px',
         'height': '570px'
     });
 
@@ -109,7 +112,8 @@ var page1 = function(){
         'display': 'inline-block',
         'position': 'relative',
         'width': '100%',
-        'height': '246px',
+        /*'height': '246px',*/
+        'height': 'auto',
         'font-size': '18px',
         'font-weight': '600',
         'background-color': '#d3cbcb',
@@ -129,6 +133,7 @@ var page1 = function(){
         'font-family': '"Dancing Script", cursive',
         'color': '#f00',
         'font-size': '28px',
+        /*'overflow': 'scroll',*/
         'font-weight': '900'
     });  
 
@@ -147,14 +152,17 @@ var page2 = function(){
     
     $dinfo.css({
         'width': '80%',
-        'height': '570px'
+        'min-width': '500px',
+        /*'height': '570px',*/
+        'height': 'auto'
     });
 
     $infoall.css({
         'display': 'inline-block',
         'position': 'relative',
         'width': '80%',
-        'height': '246px',
+        /*'height': '246px',*/
+        'height': 'auto',
         'font-size': '18px',
         'font-weight': '600',
         'background-color': '#d3cbcb',
@@ -197,6 +205,7 @@ var page3 = function(){
     
     $dinfo.css({
         'width': '80%',
+        'min-width': '500px',
         'height': '570px'
     });
 
@@ -244,6 +253,8 @@ var page3 = function(){
     });
     
     $('#comments').css({
+        'width': '80%',
+        'min-width': '200px',
         'font-family': 'cursive',
         'font-size': '16px',
         'font-weight': '200'
